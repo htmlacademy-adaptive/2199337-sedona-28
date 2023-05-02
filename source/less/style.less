@@ -1,1 +1,73 @@
 // Начните писать стили здесь
+
+@import "./blocks/main-header.less";
+@import "./blocks/main-nav-list.less";
+@import "./blocks/main-nav.less";
+@import "./blocks/reasons.less";
+@import "./blocks/welcome.less";
+@import "./blocks/infrastructure.less";
+@import "./blocks/interest.less";
+@import "./blocks/map.less";
+@import "./blocks/main-footer.less";
+
+
+// Colors
+
+@blue: #81b3d2;
+@white: #ffffff;
+
+// Viewports
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 320px;
+
+@import "./fonts.less";
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .page {
+    height: 100%;
+    font-size: 18px;
+    font-family: "PT Sans", sans-serif;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  .page__body {
+    min-height: 100%;
+    margin: 0;
+    background-color: @white;
+    color: #333333;
+  }
+
+  .button {
+    background-color: #81b3d2;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }

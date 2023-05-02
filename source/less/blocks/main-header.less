@@ -1,0 +1,19 @@
+.main-header {
+  background-color: #ffffff;
+  color: @blue;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+}
+
+.main-header__logo {
+  position: absolute;
+  height: 96px;
+  @media (min-width: @tablet-width) {
+    height: 300px;
+  }
+  @media (min-width: @desktop-width) {
+    height: 400px;
+}
+}
